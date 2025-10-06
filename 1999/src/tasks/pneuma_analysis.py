@@ -19,7 +19,7 @@ class PneumaAnalysis(Task):
         super().run()
         try:
             Log.press(HomepageKey.STORY)
-            self.wait_and_click(GameTarget.resource)
+            self.wait_and_click(GameTarget.resource, similarity = 0.5)
             self.wait_and_click(GameTarget.pneuma_analysis)
             self.wait_and_click(GameTarget.pneuma_07)
             self.wait_and_click(GameTarget.start_action)
